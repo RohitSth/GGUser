@@ -13,7 +13,6 @@ const QRToggle = () => {
   return (
     <>
       {/* Modal toggle */}
-
       <div className="mt-2 flex justify-center">
         <button
           onClick={toggleModal}
@@ -44,9 +43,9 @@ const QRToggle = () => {
         <div
           tabIndex={-1}
           aria-hidden="true"
-          className="fixed inset-0 z-50 overflow-y-auto bg-gray-500 bg-opacity-50 flex justify-center items-center"
+          className="fixed inset-0 z-50 overflow-y-auto bg-gray-500 bg-opacity-50 flex justify-center items-center "
         >
-          <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
+          <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 mx-2">
             {/* Modal header */}
             <div className="flex justify-between items-center border-b pb-4">
               <h3 className="text-lg font-semibold text-gray-900">QR CODE</h3>
