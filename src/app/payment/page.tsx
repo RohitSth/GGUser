@@ -1,8 +1,8 @@
 import Image from "next/image";
-import EventDetails from "../components/event-details/page";
-import ToggleButton from "../components/qr/qr-button-toggle/page";
 
-const TicketPage = () => {
+import PaymentToggleButton from "../components/payment/payment-info-toggle/page";
+
+const PaymentPage = () => {
   return (
     <>
       <div className="flex justify-center  mx-auto mt-8 py-4">
@@ -22,11 +22,9 @@ const TicketPage = () => {
                 Events name
               </h5>
             </a>
-            {/* Event Details */}
-            <EventDetails />
 
-            {/* QR Button */}
-            <ToggleButton />
+            {/* PAY Button */}
+            <PaymentToggleButton />
           </div>
         </div>
       </div>
@@ -34,4 +32,4 @@ const TicketPage = () => {
   );
 };
 
-export default TicketPage;
+export default PaymentPage;

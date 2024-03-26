@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <div className="flex justify-center">
         <Link
-          className={`mr-5 text-2xl ${
+          className={`mr-5 text-xl ${
             pathname === "/ticket" ? "text-blue-600" : ""
           }`}
           href="/ticket"
@@ -18,12 +18,20 @@ const Header = () => {
           Ticket V1
         </Link>
         <Link
-          className={`mr-5 text-2xl ${
+          className={`mr-5 text-xl ${
             pathname === "/ticketv2" ? "text-blue-600" : ""
           }`}
           href="/ticketv2"
         >
           Ticket V2
+        </Link>
+        <Link
+          className={`mr-5 text-xl ${
+            pathname === "/payment" ? "text-blue-600" : ""
+          }`}
+          href="/payment"
+        >
+          Payment
         </Link>
       </div>
     </>

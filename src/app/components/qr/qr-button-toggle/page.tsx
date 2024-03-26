@@ -3,7 +3,7 @@
 import { useState } from "react";
 import QRCode from "../qr-code/page";
 
-const QRToggle = () => {
+const ToggleButton = () => {
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -63,4 +63,4 @@ const QRToggle = () => {
   );
 };
 
-export default QRToggle;
+export default ToggleButton;
