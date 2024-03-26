@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import QRCode from "../qr-code/page";
 
 const QRToggle = () => {
   const [showModal, setShowModal] = useState(false);
@@ -43,7 +43,7 @@ const QRToggle = () => {
         <div
           tabIndex={-1}
           aria-hidden="true"
-          className="fixed inset-0 z-50 overflow-y-auto bg-gray-500 bg-opacity-50 flex justify-center items-center "
+          className="fixed inset-0 z-50 overflow-y-auto bg-gray-500 bg-opacity-50 flex justify-center items-center"
         >
           <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 mx-2">
             {/* Modal header */}
@@ -69,31 +69,8 @@ const QRToggle = () => {
                 </svg>
               </button>
             </div>
-            {/* Modal body */}
-            <div className="mt-4">
-              <Image
-                className="rounded-2xl p-3"
-                alt="qr code"
-                src="/qr.webp"
-                width={400}
-                height={400}
-              />
-            </div>
-            {/* Modal footer
-            <div className="mt-6 flex justify-end">
-              <button
-                onClick={toggleModal}
-                className="bg-blue-700 text-white hover:bg-blue-800 px-4 py-2 rounded-lg mr-2"
-              >
-                I accept
-              </button>
-              <button
-                onClick={toggleModal}
-                className="bg-gray-200 text-gray-700 hover:text-gray-900 px-4 py-2 rounded-lg"
-              >
-                Decline
-              </button>
-            </div> */}
+            {/* QRCode */}
+            <QRCode />
           </div>
         </div>
       )}
