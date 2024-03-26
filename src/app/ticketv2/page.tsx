@@ -39,10 +39,10 @@ const TicketPage = () => {
             {showQRCode && <QRCode />}
 
             {/* <QRToggle /> */}
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-2">
               <button
                 onClick={toggleQRCode}
-                className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800 "
+                className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
                 type="button"
               >
                 {showQRCode ? "HIDE" : "QR CODE"}

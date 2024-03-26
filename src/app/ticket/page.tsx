@@ -5,7 +5,7 @@ import QRToggle from "../components/qr-modal-toggle/page";
 const TicketPage = () => {
   return (
     <>
-      <div className="flex justify-center  mx-auto mt-20 py-4">
+      <div className="flex justify-center  mx-auto mt-8 py-4">
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg">
           {/* Event Image  */}
           <Image
