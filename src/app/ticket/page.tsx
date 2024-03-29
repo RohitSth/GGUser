@@ -1,6 +1,6 @@
 import Image from "next/image";
-import EventDetails from "../components/event-details/page";
-import ToggleButton from "../components/qr/qr-button-toggle/page";
+import EventDetails from "../components/EventDetails";
+import ToggleButton from "../components/QRToggleButton";
 
 const TicketPage = () => {
   return (
@@ -22,6 +22,7 @@ const TicketPage = () => {
                 Events name
               </h5>
             </a>
+            <div className="border-dashed border-b-2 mb-5 pt-4"></div>
             {/* Event Details */}
             <EventDetails />
 

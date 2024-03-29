@@ -1,6 +1,6 @@
 import Image from "next/image";
-import QR from "../components/payment/qr-reader/page";
-import PaymentToggleButton from "../components/payment/payment-info-toggle/page";
+import QRreader from "../components/payment/qr-reader/page";
+import PaymentToggleButton from "../components/payment/PaymentSuccess";
 
 const PaymentPage = () => {
   return (
@@ -26,7 +26,7 @@ const PaymentPage = () => {
             {/* PAY Button */}
             <PaymentToggleButton />
 
-            <QR />
+            <QRreader />
           </div>
         </div>
       </div>

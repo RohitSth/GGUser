@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import EventDetails from "../components/event-details/page";
-import QRCode from "../components/qr/qr-code/page";
+import EventDetails from "../components/EventDetails";
+import QRCode from "../components/QRCode";
 
 const TicketPage = () => {
   const [showQRCode, setShowQRCode] = useState(false);

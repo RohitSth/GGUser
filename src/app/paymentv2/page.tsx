@@ -1,6 +1,4 @@
 import Image from "next/image";
-import QR from "../components/payment/qr-reader/page";
-import PaymentToggleButton from "../components/payment/payment-info-toggle/page";
 
 const PaymentPage = () => {
   return (
@@ -44,7 +42,11 @@ const PaymentPage = () => {
               <p className="text-sm">Price</p>
               <p className="text-lg font-bold text-blue-500">$ 10</p>
             </div>
-            <PaymentToggleButton />
+            <a href="/components/payment/purchase-ticket">
+              <button className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                Purchase Ticket
+              </button>
+            </a>
           </div>
         </div>
       </div>

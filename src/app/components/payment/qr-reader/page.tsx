@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Html5QrcodeScanner } from "html5-qrcode";
-const QR = () => {
+const QRreader = () => {
   const [scanResult, setScanResult] = useState(null);
 
   useEffect(() => {
@@ -42,4 +42,4 @@ const QR = () => {
   );
 };
 
-export default QR;
+export default QRreader;

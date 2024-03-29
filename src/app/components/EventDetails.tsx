@@ -1,4 +1,4 @@
-import EventListItem from "../event-list-item/page";
+import EventListItem from "./EventListItem";
 
 const EventDetails = () => {
   return (
