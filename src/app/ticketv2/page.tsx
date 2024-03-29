@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import EventDetails from "../components/event-details/page";
-import QRCode from "../components/qr-code/page";
+import QRCode from "../components/qr/qr-code/page";
 
 const TicketPage = () => {
   const [showQRCode, setShowQRCode] = useState(false);
@@ -32,6 +32,7 @@ const TicketPage = () => {
                 Events name
               </h5>
             </a>
+            <div className="border-dashed border-b-2 mb-5 pt-4"></div>
             {/* Event Details */}
             <EventDetails />
 

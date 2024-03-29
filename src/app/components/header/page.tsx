@@ -33,6 +33,14 @@ const Header = () => {
         >
           Payment
         </Link>
+        <Link
+          className={`mr-5 text-xl ${
+            pathname === "/paymentv2" ? "text-blue-600" : ""
+          }`}
+          href="/paymentv2"
+        >
+          PaymentV2
+        </Link>
       </div>
     </>
   );
