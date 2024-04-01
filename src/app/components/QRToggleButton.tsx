@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import QRCode from "./QRCode";
+import QRCodeComponent from "./QRCodeComponent";
 
 const ToggleButton = () => {
   const [showModal, setShowModal] = useState(false);
@@ -55,7 +55,7 @@ const ToggleButton = () => {
               </button>
             </div>
             {/* QRCode */}
-            <QRCode />
+            <QRCodeComponent />
           </div>
         </div>
       )}
